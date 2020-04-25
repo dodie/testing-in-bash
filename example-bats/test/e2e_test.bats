@@ -8,6 +8,7 @@ load '../lib/bats-assert/load'
 }
 
 @test "e2e - there should be 20% discount for large quantities on odd days" {
+  # Mocking date by adding a custom executable to the PATH
   export DATE_MOCK_REPLY="1"
   export PATH=test/mocks:$PATH
 
@@ -17,6 +18,7 @@ load '../lib/bats-assert/load'
 }
 
 @test "e2e - there should be no discount even for large quantities on even days" {
+  # Mocking date by adding a custom executable to the PATH
   export DATE_MOCK_REPLY="2"
   export PATH=test/mocks:$PATH
 

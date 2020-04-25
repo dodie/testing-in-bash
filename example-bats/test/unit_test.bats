@@ -11,10 +11,12 @@ load '../lib/bats-assert/load'
 }
 
 @test "there should be 20% discount for large quantities on odd days" {
+  # Mocking a function by defining an alias
+  shopt -s expand_aliases
+  alias "getDay"="echo '1'"
+
   source src/ice_cream_price.sh
 
-  function getDay() { echo "1"; }
-  export -f getDay
   run main 4
 
   assert_success
@@ -24,6 +26,7 @@ load '../lib/bats-assert/load'
 @test "there should be no discount even for large quantities on even days" {
   source src/ice_cream_price.sh
 
+  # Mocking a function by exporting a function
   function getDay() { echo "2"; }
   export -f getDay
   run main 4
