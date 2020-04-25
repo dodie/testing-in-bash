@@ -17,8 +17,8 @@ result=$(hello "John")
 expected="What a wonderful day, John!"
 
 if [[ "${result}" == "${expected}" ]]; then
-  echo “Test passed!”
+  echo "Test passed!"
 else
-  echo “Test failed!”
+  echo "Test failed!"
   exit 1
 fi
