@@ -1,8 +1,11 @@
 load '../lib/bats-support/load'
 load '../lib/bats-assert/load'
 
-@test "price should be 100 per portion for low quantities" {
-  run src/ice_cream_price.sh 1
+@test "ice cream price should be 100 per portion for low quantities" {
+  source src/ice_cream_price.sh
+
+  run main 1
+
   assert_success
   assert_output -p "Total 100"
 }
