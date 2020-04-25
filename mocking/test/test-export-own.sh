@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Include the function to be tested
-source greeting.sh
+SRC="$(dirname .)/../src"
+source ${SRC}/greeting.sh
 
 # Set up mocks
 function day_of_week() {

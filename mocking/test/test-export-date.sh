@@ -1,10 +1,17 @@
 #!/bin/bash
 
-# Add mocks to the path
-export PATH=mocks:$PATH
+# Include the function to be tested
+SRC="$(dirname .)/../src"
+source ${SRC}/greeting.sh
+
+# Set up mocks
+function date() {
+  echo "Friday"
+}
+export -f day_of_week
 
 # Execute test case
-result=$(./greeting.sh "John")
+result=$(hello "John")
 
 # Verify results
 expected="What a wonderful day, John!"

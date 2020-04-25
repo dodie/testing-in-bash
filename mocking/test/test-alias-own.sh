@@ -5,7 +5,8 @@ shopt -s expand_aliases
 alias day_of_week="echo 'Friday'"
 
 # Include the function to be tested
-source greeting.sh
+SRC="$(dirname .)/../src"
+source ${SRC}/greeting.sh
 
 # Execute test case
 result=$(hello "John")

@@ -1,14 +1,11 @@
 #!/bin/bash
 
-# Set up mocks
-shopt -s expand_aliases
-alias "date"="echo 'Friday';true"
-
-# Include the function to be tested
-source greeting.sh
+# Add mocks to the path
+export PATH=mocks:$PATH
 
 # Execute test case
-result=$(hello "John")
+SRC="$(dirname .)/../src"
+result=$(${SRC}/greeting.sh "John")
 
 # Verify results
 expected="What a wonderful day, John!"

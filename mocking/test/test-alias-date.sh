@@ -1,13 +1,12 @@
 #!/bin/bash
 
-# Include the function to be tested
-source greeting.sh
-
 # Set up mocks
-function date() {
-  echo "Friday"
-}
-export -f day_of_week
+shopt -s expand_aliases
+alias "date"="echo 'Friday';true"
+
+# Include the function to be tested
+SRC="$(dirname .)/../src"
+source ${SRC}/greeting.sh
 
 # Execute test case
 result=$(hello "John")
