@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "${DATE_MOCK_REPLY}"
+
