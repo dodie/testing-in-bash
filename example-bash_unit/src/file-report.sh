@@ -1,7 +1,5 @@
 #!/bin/bash
 
-set -euo pipefail
-
 mode=$1
 path=$2
 

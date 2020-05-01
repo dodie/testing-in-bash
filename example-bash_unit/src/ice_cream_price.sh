@@ -1,6 +1,5 @@
 #!/bin/bash
 
-set -euo pipefail
 function main() {
     numberOfPortions=$1
     pricePerPortion=$(calculatePrice $numberOfPortions)
