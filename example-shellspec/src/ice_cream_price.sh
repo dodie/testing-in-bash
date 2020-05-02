@@ -22,7 +22,7 @@ function calculatePrice() {
 }
 
 function getDay() {
-    date -d "$D" '+%d'
+    date -d '+%d'
 }
 
 if [[ "${BASH_SOURCE[0]}" == "${0}" ]]
