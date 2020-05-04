@@ -5,6 +5,12 @@
 Test files are simple shell scripts, executed by the test framework. There's no need for any extra noise besides the test
 functions in a test file: no custom shebang line, no framework initialization code, and no custom imports.
 
+```bash
+test_example(){
+  assert_equals "hello" "world"
+}
+```
+
 Test functions are simple bash functions without custom syntax. All functions which name is starting with `test_`
 is considered a test function
 
