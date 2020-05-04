@@ -15,6 +15,14 @@ a naming convention, and overall the look and feel of a test file is very simila
 This forces you to either put its executable to the PATH or some environment variable, or hardcode its path into
 each of the tests.
 
+```bash
+testEquality() {
+  assertEquals 1 1
+}
+
+. ./shunit2
+```
+
 
 ## Test Discovery
 
