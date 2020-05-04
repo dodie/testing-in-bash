@@ -2,7 +2,7 @@
 
 ## Test format
 
-Test files are simple shell scripts, executed by the test framework. There's no need for any extra noise besides the test
+✔️ Test files are simple shell scripts, executed by the test framework. There's no need for any extra noise besides the test
 functions in a test file: no custom shebang line, no framework initialization code, and no custom imports.
 
 ```bash
@@ -11,7 +11,7 @@ test_example(){
 }
 ```
 
-Test functions are simple bash functions without custom syntax. All functions which name is starting with `test_`
+✔️ Test functions are simple bash functions without custom syntax. All functions which name is starting with `test_`
 is considered a test function
 
 
@@ -27,23 +27,25 @@ one might wish to introduce a [lightweight wrapper](https://github.com/dodie/tes
 ## Assertions
 
 ⚠️ It has some assertions available like `assert_equals` but lacks other essential ones, like `assert_contains`.
+
 ✓ All assertions provide a nice, easy to read report including the context and line number.
 
 
 ## Custom assertions
 
-It’s possible to create new assertions by building functions on top of the existing assertions, although there's no dedicated no dedicated lower-level API to support it. Custom assertions can be sourced from an external file.
+✔️ It’s possible to create new assertions by building functions on top of the existing assertions, although there's no dedicated no dedicated lower-level API to support it. Custom assertions can be sourced from an external file.
 
 
 ## Skip tests
 
-If a test function name is starting with `pending` or `todo` it will be skipped which will be properly reflected in the report.
+✔️ If a test function name is starting with `pending` or `todo` it will be skipped which will be properly reflected in the report.
 
 
 ## Mocking
 
-Supports all [common techniques](https://github.com/dodie/testing-in-bash/tree/master/mocking) for mocking,
-and it even has the
+✔️ Supports all [common techniques](https://github.com/dodie/testing-in-bash/tree/master/mocking) for mocking.
+
+✔️ Additionally, it even has the
 [built-in `fake` command](https://github.com/pgrange/bash_unit/blob/a10751626ef0caa2bc5988a574e9a546426a2791/bash_unit#L123-L133)
 which is a shorthand for the function-export based mock technique,
 making the tests even more clear and concise.
@@ -51,10 +53,10 @@ making the tests even more clear and concise.
 
 ## Activity
 
-The project is around since 2016 and has regular releases. Overall much less popular than Bats or shUnit2, and has activity
+✔️ The project is around since 2016 and has regular releases. Overall much less popular than Bats or shUnit2, and has activity
 on the GitHub repository, but there's also much less forgotten issues and PRs.
 
 
 ## Documentation
 
-Based on the [getting started guide](https://github.com/pgrange/bash_unit) it was really easy to get started.
+✔️ Based on the [getting started guide](https://github.com/pgrange/bash_unit) it was really easy to get started.
