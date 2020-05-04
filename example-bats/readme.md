@@ -1,5 +1,8 @@
 # Bats test drive
 
+Bats is a well established contender in the scene of Bash testing frameworks. It has many features and provides a custom `@test` annotation to make tests easier to write.
+
+
 ## Test format
 
 ✔️ Test files are "almost Bash".
