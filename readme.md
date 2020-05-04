@@ -48,20 +48,20 @@ testing framework to a local directory, then execute `test.sh` to start the suit
 | Mature                                                      | ✔️ [<sup>since 2011</sup>](https://github.com/bats-core/bats-core/releases)              | ✔️ [<sup>since 2007</sup>](https://github.com/kward/shunit2/commits/master?after=0f0a77b6b257f24d2b3ef1b28096fdd154a19f22+10) | ✔️ [<sup>since 2016</sup>](https://github.com/pgrange/bash_unit/releases) | ❌ [<sup>since 2019</sup>](https://github.com/shellspec/shellspec/releases) |
 | Good documentation                                          | ⚠ [<sup>?</sup>](example-bats#documentation)                                            | ✔️ [<sup>?</sup>](example-shunit2#documentation)                                                                              | ✔️ [<sup>?</sup>](example-bash_unit#documentation)                        | ✔️ [<sup>?</sup>](example-shellspec#documentation)                          |
 
-\* **Mocking**:
+\* **Mocking**:<br/>
 The testing framework is compatible with the [common mocking techniques](https://github.com/dodie/testing-in-bash/tree/master/mocking).
 
-\*\* **Isolation between tests**:
+\*\* **Isolation between tests**:<br/>
 Aliases, custom function definitions, Bash options and variables are not leaking from one test
 to another.
 
-\*\*\* **Easy to install**:
+\*\*\* **Easy to install**:<br/>
 Many of the frameworks support more than one alternatives on how to set it up quickly. It's possible
 to install it with your favourite package manager and some of them even have an official Docker image.
 Personally, I try to avoid installing project dependencies globally as much as I can,
 so I just decided to grab a tar.gz file with the latest release from GitHub.
 
-\*\*\*\* **Compatible with the Unofficial Bash Strict Mode**:
+\*\*\*\* **Compatible with the Unofficial Bash Strict Mode**:<br/>
 Sourcing a script file that use the [Unofficial Bash Strict Mode](http://redsymbol.net/articles/unofficial-bash-strict-mode/) should
 not break the test framework. Of course, custom assertions and the test code
 [should also work with strict mode](https://github.com/dodie/testing-in-bash/tree/master/strictmode).
