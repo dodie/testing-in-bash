@@ -1,5 +1,9 @@
 # bash_unit test drive
 
+This framework allows to write test files in pure Bash, without custom syntax, yet provide concise syntax and many features.
+My only concern is that it has only a few built-in assertions, but that can be solved by writing custom ones.
+
+
 ## Test format
 
 ✔️ Test files are simple shell scripts, executed by the test framework. There's no need for any extra noise besides the test
