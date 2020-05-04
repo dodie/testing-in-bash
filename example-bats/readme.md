@@ -2,7 +2,7 @@
 
 ## Test format
 
-✔️/⚠️ Test files are "almost Bash".
+✔️ Test files are "almost Bash".
 
 ⚠️ BATS only considers files with the `.bats` extension. This is not a huge problem, but the editor has to be adapted
 a bit to offer syntax highlight and the usual features for these files.
