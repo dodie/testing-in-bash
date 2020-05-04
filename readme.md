@@ -12,6 +12,14 @@ In this comparision I've included well-established and new testing frameworks th
 - [ShellSpec](https://github.com/shellspec/shellspec), a BDD style testing framework with its own DSL
 
 
+## Contribution guide
+
+If you disagree with any of the conclusions or points, or know a testing framework that should be mentioned feel free to
+open an issue or Pull Request.
+
+To add an example with a new framework please follow the structure used for the other examples.
+
+
 ## Test drive
 
 To start fiddling with any of the test projects just run the `install.sh` to download and extract the particular
