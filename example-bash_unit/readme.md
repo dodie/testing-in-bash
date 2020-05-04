@@ -17,7 +17,7 @@ is considered a test function
 
 ## Test Discovery
 
-✓ bash_unit is parameterized with the list of test files to be executed. This means that it's trivial to focus on a single
+✔️ bash_unit is parameterized with the list of test files to be executed. This means that it's trivial to focus on a single
 test file to execute. Moreover, it can also take a pattern to narrow test cases to be executed to the matching ones.
 
 ⚠️ Because it explicitly has to be parameterized with the list of test files, it can't discover directories. For this purpose
@@ -28,7 +28,7 @@ one might wish to introduce a [lightweight wrapper](https://github.com/dodie/tes
 
 ⚠️ It has some assertions available like `assert_equals` but lacks other essential ones, like `assert_contains`.
 
-✓ All assertions provide a nice, easy to read report including the context and line number.
+✔️ All assertions provide a nice, easy to read report including the context and line number.
 
 
 ## Custom assertions
