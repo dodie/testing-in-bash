@@ -1,5 +1,11 @@
 # shUnit2 test drive
 
+shUnit2 is the great-grandmother of all bash test frameworks. I really like that the test files are plain old Bash files,
+and that it has lot's of assertions by default. However, regarding other features it seems to be lagging behind it's competitors.
+
+If you are after a "pure Bash" testing framework, make sure to also check [bash_unit](https://github.com/dodie/testing-in-bash/blob/master/example-bash_unit/).
+
+
 ## Test format
 
 ✔️ Test files are simple Bash scripts that one can execute. Functions are picked up by the test framework based on
