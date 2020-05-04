@@ -71,3 +71,4 @@ not break the test framework. Of course, custom assertions and the test code
 
 - https://medium.com/wemake-services/testing-bash-applications-85512e7fe2de
 - https://stackoverflow.com/questions/1339416/unit-testing-bash-scripts
+- https://www.leadingagile.com/2018/10/unit-testing-shell-scriptspart-one/
