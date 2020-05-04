@@ -1,5 +1,12 @@
 # ShellSpec test drive
 
+ShellSpec is the latest and the most featureful test framework I've found for Bash. It has sexy syntax and new releases are coming up
+frequently.
+
+However, it's also pretty new, first released in 2019. I expect some rough edges to be polished and some breaking API changes here.
+Also, while I really like its DSL, one has to decide if this is really his thing or not. I for one prefer BDD style for more end-user facing tests only, and I like it better if the unit tests are more similar to production code, so they can be used as concrete examples.
+
+
 ## Test format
 
 There's a specific DSL built into the framework to support BDD style tests:
