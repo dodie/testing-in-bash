@@ -1,4 +1,4 @@
-# Additional notes for the comparision
+# bash_unit test drive
 
 ## Test format
 
