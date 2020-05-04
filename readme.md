@@ -6,17 +6,13 @@ However, many of them are not actively maintained, or are used only by a small g
 In this comparision I've included well-established and new testing frameworks that had at least one release in
 2019 or 2020, and have more than 50 Stars on GitHub:
 
-- [Bats example project](example-bats)
-- [shUnit2 example project](example-shunit2)
-- [Bash Unit example project](example-bash_unit)
-- [ShellSpec example project](example-shellspec)
+- [Bats](https://github.com/bats-core/bats-core), a mature testing library with a bit of a custom syntax for more concise tests: [Bats example project and test drive](example-bats)  
+- [shUnit2](https://github.com/kward/shunit2), possibly the oldest Bash test framework around, supporting test files in pure Bash: [shUnit2 example project and test drive](example-shunit2)
+- [bash_unit](https://github.com/pgrange/bash_unit), a new and featureful test framework where test cases can be written in pure Bash: [bash_unit example project and test drive](example-bash_unit)
+- [ShellSpec](https://github.com/shellspec/shellspec), a BDD style testing framework with its own DSL: [ShellSpec example project and test drive](example-shellspec)
 
 To start fiddling with any of the test projects just run the `install.sh` to download and extract the particular
 testing framework to a local directory, then execute `test.sh` to start the suite.
-
-## TLDR
-
-TODO
 
 ## Detailed comparision
 
