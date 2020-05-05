@@ -1,4 +1,4 @@
-Corrections, additions are welcome!
+Thanks for taking the time to provide corrections and additions!
 
 To add an example with a new framework please follow the structure used for the other examples.
 
