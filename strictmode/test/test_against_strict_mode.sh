@@ -1,6 +1,7 @@
 #!/bin/bash
 
-SRC="$(dirname .)/../src"
+script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+SRC="${script_dir}/../src"
 
 # ===========
 #  E2E tests

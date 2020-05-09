@@ -1,11 +1,13 @@
 #!/bin/bash
 
+script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 # Set up mocks
 shopt -s expand_aliases
 alias "date"="echo 'Friday';true"
 
 # Include the function to be tested
-SRC="$(dirname .)/../src"
+SRC="${script_dir}/../src"
 source ${SRC}/greeting.sh
 
 # Execute test case

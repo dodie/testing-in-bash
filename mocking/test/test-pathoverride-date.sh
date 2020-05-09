@@ -1,10 +1,12 @@
 #!/bin/bash
 
+script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 # Add mocks to the path
 export PATH=mocks:$PATH
 
 # Execute test case
-SRC="$(dirname .)/../src"
+SRC="${script_dir}/../src"
 result=$(${SRC}/greeting.sh "John")
 
 # Verify results

@@ -1,7 +1,9 @@
 #!/bin/bash
 
+script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 # Include the function to be tested
-SRC="$(dirname .)/../src"
+SRC="${script_dir}/../src"
 source ${SRC}/greeting.sh
 
 # Set up mocks
