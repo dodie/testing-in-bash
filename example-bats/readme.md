@@ -7,7 +7,7 @@ Bats is a well established contender in the scene of Bash testing frameworks. It
 
 ✔️ Test files are "almost Bash".
 
-⚠️ BATS only considers files with the `.bats` extension. This is not a huge problem, but the editor has to be adapted
+⚠️ Bats only considers files with the `.bats` extension. This is not a huge problem, but the editor has to be adapted
 a bit to offer syntax highlight and the usual features for these files.
 
 ✔️ Also, tests are marked with a special `@test` annotation, which is not Bash syntax. It's is picked up by BATS which
@@ -128,7 +128,7 @@ maintenance and collect useful thirdparty libraries. Despite this transition, th
 
 ⚠️ The bats-core project has good documentation, and seems to be up to date, but the thirdparty libraries, including bats-assert
 seems to lag behind. In many cases they link to old repos from before the transition to the bats-core organization, and documents that
-ere not updated in the last couple of years. For example the documentation recommended installing bats-assert and its dependency
-into the test folder, but that [did not work](https://github.com/bats-core/bats-core/issues/273) because BATS considered thesir files
+are not updated in the last couple of years. For example the documentation recommended installing bats-assert and its dependency
+into the test folder, but that [did not work](https://github.com/bats-core/bats-core/issues/273) because BATS considered their files
 as test cases and tried to execute them.
 
