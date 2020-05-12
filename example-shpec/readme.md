@@ -27,7 +27,7 @@ in order to write tests efficiently.
 
 ## Test Discovery
 
-✔️ The test runner considers all files as tests that are in the shpec folder and their name ends in "_spec.sh".
+✔️ The test runner considers all files as tests that are in the shpec folder and their name ends in `_spec.sh`.
 By default all test cases are executed, by calling shpec with a shpec-file as the first parameter, only this case is tested.
 
 ✔️ It also expects a specific project structure, test files must be in the schema of ./shpec/**/*_shpec.sh, 
@@ -73,5 +73,4 @@ taking care of PRs.
 
 ✔️ The project test's itself, the tests are not only functional but are written to be good [examples](https://github.com/rylnd/shpec/blob/master/shpec/shpec_shpec.sh).
 Also, the [Readme](https://github.com/rylnd/shpec/) gives a good overview on how to use and where to read more.
-
 
