@@ -31,7 +31,7 @@ in order to write tests efficiently.
 By default all test cases are executed, by calling shpec with a shpec-file as the first parameter, only this case is tested.
 
 ✔️ It also expects a specific project structure, test files must be in the schema of `./shpec/**/*_shpec.sh`, 
-custom matcher should be in ./shpec/matchers/ every thing else is up to you.
+custom matcher should be in `./shpec/matchers/` every thing else is up to you.
 
 
 ## Assertions
