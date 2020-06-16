@@ -72,7 +72,8 @@ so I just decided to grab a tar.gz file with the latest release from GitHub.
 \*\*\*\* **Compatible with the Unofficial Bash Strict Mode**:<br/>
 Sourcing a script file that use the [Unofficial Bash Strict Mode](http://redsymbol.net/articles/unofficial-bash-strict-mode/) should
 not break the test framework. Of course, custom assertions and the test code
-[should also work with strict mode](https://github.com/dodie/testing-in-bash/tree/master/strictmode).
+[should also work with strict mode](https://github.com/dodie/testing-in-bash/tree/master/strictmode) but that's up for the user.
+Also, the test framework shouldn't set Bash options as well to ensure that executing sourced functions work similarly to when they are not sourced.
 
 
 ## Related posts, other comparisions
