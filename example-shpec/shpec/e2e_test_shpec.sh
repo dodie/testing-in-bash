@@ -4,7 +4,6 @@ PATH="$PWD/shpec/mocks:$PATH"
 DATE_MOCK_REPLY=1
 
 describe "ice_cream_price.sh (e2e)"
-
   it "should display 100 for the price of a portion for low quantities"
     assert equal "$(src/ice_cream_price.sh 1)" "Total 100"
   end
@@ -23,6 +22,3 @@ describe "ice_cream_price.sh (e2e)"
     assert equal "$(src/ice_cream_price.sh 5)" "Total 500"
   end
 end
-
-
-exit
