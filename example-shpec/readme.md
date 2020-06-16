@@ -1,17 +1,18 @@
 # ShellSpec test drive
 
-Shpec is [...].
-It's quite mature with it's first (0.0.1) release from 2013 
-It's DSL is looks like a simpler version of shellspec's DSL.
+Shpec is is a quite mature with it's first release from 2013.
+Its DSL is looks like a simpler version of
+[shellspec](https://github.com/dodie/testing-in-bash/tree/master/example-shellspec)'s DSL.
 
 Shpec tries to not implement things that can be done as easily in bash it self.
+
+
 ## Test format
 
 There's a specific DSL built into the framework to support BDD style tests:
 
 ```bash
 describe "ice_cream_price.sh (e2e)"
-
   it "should display 100 for the price of a portion for low quantities"
     assert equal "$(src/ice_cream_price.sh 1)" "Total 100"
   end
@@ -43,9 +44,9 @@ contain all necessary context information.
 
 ✔️ The DSL itself is extensible with custom matchers.
 
-⚠️ as in other frameworks you could just define them as a function but you should put them in an extra file under shpec/matchers/ to have them reuseable.
+You can define custom matchers simply as functions, but in order to make them reusable, you have to put them in an extra file under `shpec/matchers/`.
 
-If all else fails Bash functions can be directly called from the tests, and with that custom assertions can be implemented.
+⚠️ If all else fails Bash functions can be directly called from the tests, and with that custom assertions can be implemented.
 However it might have the downside that the bashy code has to interface with the DSL, which might be not so convenient,
 and the test code will be a mix of DSL and bash. 
 
@@ -58,7 +59,7 @@ and the test code will be a mix of DSL and bash.
 - function export
 - PATH override
 
-Also there is [stubbing](https://github.com/rylnd/shpec#stubbing) build in.
+✔️ Also there is [stubbing](https://github.com/rylnd/shpec#stubbing) build in.
 
 ## Activity
 
