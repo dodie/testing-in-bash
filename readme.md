@@ -10,6 +10,7 @@ In this comparision I've included well-established and new testing frameworks th
 - [shUnit2](https://github.com/kward/shunit2), possibly the oldest Bash test framework around, supporting test files in pure Bash
 - [bash_unit](https://github.com/pgrange/bash_unit), a new and featureful test framework where test cases can be written in pure Bash
 - [ShellSpec](https://github.com/shellspec/shellspec), a BDD style testing framework with its own DSL
+- [shpec](https://github.com/rylnd/shpec), a BDD style testing framework similar to RSpec, Jasmine, and mocha
 
 
 ## Contribution guide
@@ -27,6 +28,7 @@ testing framework to a local directory, then execute `test.sh` to start the suit
 - [shUnit2 example project and test drive](example-shunit2)
 - [bash_unit example project and test drive](example-bash_unit)
 - [ShellSpec example project and test drive](example-shellspec)
+- [shpec example project and test drive](example-shpec)
 
 
 ## Detailed comparision
