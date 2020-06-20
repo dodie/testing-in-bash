@@ -16,7 +16,7 @@ In this comparision I've included well-established and new testing frameworks th
 ## Contribution guide
 
 If you know a testing framework that should be mentioned here or find that there's room for improvement feel free to
-open an issue or Pull Request. (See [CONTRIBUTING](https://github.com/dodie/testing-in-bash/blob/master/CONTRIBUTING).)
+open an issue or Pull Request. (See [CONTRIBUTING.md](https://github.com/dodie/testing-in-bash/blob/master/CONTRIBUTING.md).)
 
 
 ## Test drive
