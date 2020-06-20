@@ -1,6 +1,6 @@
 # Shpec test drive
 
-Shpec is is a quite mature with it's first release from 2013.
+Shpec is a quite mature testing framework with it's first release from 2013.
 Its DSL is looks like a simpler version of
 [shellspec](https://github.com/dodie/testing-in-bash/tree/master/example-shellspec)'s DSL.
 
