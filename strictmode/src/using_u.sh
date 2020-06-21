@@ -3,16 +3,13 @@
 # When called without a parameter, this script will fail due to
 # an unbound variable in the 'main' function.
 # | » ./using_u.sh
-# | Start
 # | ../src/faulty_functions.sh: line 10: 1: unbound variable
 # | » echo $?
 # | 1
 #
 # When called with a parameter, it will finish without an error.
 # | » ./using_u.sh something
-# | Start
 # | The parameter is: something
-# | End
 # | » echo $?
 # | 0
 #
@@ -27,12 +24,8 @@
 set -u
 
 function main() {
-  echo "Start"
-
   # When called without a parameter it should cause the program to terminate due to -u
   echo "The parameter is: ${1}"
-
-  echo "End"
 }
 
 if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
