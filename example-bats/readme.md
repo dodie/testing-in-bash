@@ -117,6 +117,27 @@ defined:
 - PATH override
 
 
+## Unit testing scripts that set Bash options
+
+✔️ Bats itself cann `source` scripts that set custom Bash options, like `-e` or `-u` without breaking test
+execution or causing problems for the test framework.
+[[1](https://github.com/bats-core/bats-core/blob/15686b3e4cbcc00dd589e4a87e42975a0501e1f8/test/bats.bats#L325)],
+[[2](https://github.com/bats-core/bats-core/pull/26)].
+
+✔️ Because a non-zero exit code for any test command results in a failed test, I thought that all unit tested functions
+are inherently run with the `errexit` mode set. Luckily this is not the case. The `run` construct
+provides a sandbox to the function under test.
+
+⚠️ Generally, this means that unit testing functions that does not use custom Bash options, or use
+`nounset` will work normally. However, for some reason when a function is exercised with the `run` construct the
+`-e` option is always forcefully is disabled. So, if you design a script that use
+`set -e` and unit test its functions with Bats, in the unit tests the `-e` will not apply and the function
+might behave differently.
+
+For more details, see the
+[example tests that exercise scripts that use custom Bash options](https://github.com/dodie/testing-in-bash/tree/master/example-bats/test/unit_test_strict.bats).
+
+
 ## Activity
 
 ⚠️ According to the project’s GitHub repository it's been around since 2011. The [original repository](https://github.com/sstephenson/bats)
