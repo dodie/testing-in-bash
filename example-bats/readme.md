@@ -119,7 +119,7 @@ defined:
 
 ## Unit testing scripts that set Bash options
 
-✔️ Bats itself cann `source` scripts that set custom Bash options, like `-e` or `-u` without breaking test
+✔️ Bats itself can `source` scripts that set custom Bash options, like `-e` or `-u` without breaking test
 execution or causing problems for the test framework.
 [[1](https://github.com/bats-core/bats-core/blob/15686b3e4cbcc00dd589e4a87e42975a0501e1f8/test/bats.bats#L325)],
 [[2](https://github.com/bats-core/bats-core/pull/26)].
