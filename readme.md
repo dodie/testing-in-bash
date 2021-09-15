@@ -3,8 +3,7 @@
 There are [many testing frameworks for Bash](https://stackoverflow.com/questions/1339416/unit-testing-bash-scripts).
 However, many of them are not actively maintained, or are used only by a small group of people.
 
-In this comparision I've included well-established and new testing frameworks that had at least one release in
-2019 or 2020, and have more than 50 Stars on GitHub:
+In this comparision I've included well-established and new testing frameworks that had at least recent release and have more than 50 Stars on GitHub:
 
 - [Bats](https://github.com/bats-core/bats-core), a mature testing library with a bit of a custom syntax for more concise tests
 - [shUnit2](https://github.com/kward/shunit2), possibly the oldest Bash test framework around, supporting test files in pure Bash
