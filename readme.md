@@ -12,12 +12,6 @@ In this comparision I've included well-established and new testing frameworks th
 - [shpec](https://github.com/rylnd/shpec), a BDD style testing framework similar to RSpec, Jasmine, and mocha
 
 
-## Contribution guide
-
-If you know a testing framework that should be mentioned here or find that there's room for improvement feel free to
-open an issue or Pull Request. (See [CONTRIBUTING.md](https://github.com/dodie/testing-in-bash/blob/master/CONTRIBUTING.md).)
-
-
 ## Test drive
 
 To start fiddling with any of the test projects just run the `install.sh` to download and extract the particular
@@ -84,3 +78,9 @@ Also, the test framework shouldn't set Bash options as well to ensure that execu
 - https://medium.com/wemake-services/testing-bash-applications-85512e7fe2de
 - https://stackoverflow.com/questions/1339416/unit-testing-bash-scripts
 - https://www.leadingagile.com/2018/10/unit-testing-shell-scriptspart-one/
+
+
+## Contribution guide
+
+If you know a testing framework that should be mentioned here or find that there's room for improvement feel free to
+open an issue or Pull Request. (See [CONTRIBUTING.md](https://github.com/dodie/testing-in-bash/blob/master/CONTRIBUTING.md).)
