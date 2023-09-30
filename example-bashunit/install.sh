@@ -1,26 +1,7 @@
 #!/bin/bash
 
-cd "$(dirname "$0")"
-rm -rf lib
-mkdir lib
-cd lib
+curl -o _install.sh https://raw.githubusercontent.com/TypedDevs/bashunit/main/install.sh
 
-TAG=${1-main}
-
-if [[ $TAG == main ]]; then
-  echo "> Using main branch"
-  git clone git@github.com:TypedDevs/bashunit.git temp_bashunit
-else
-  echo "> Using a concrete tag '$TAG'"
-  curl -L -O -J https://github.com/TypedDevs/bashunit/archive/refs/tags/0.7.0.tar.gz
-  tar -zxvf bashunit-0.7.0.tar.gz
-  cp bashunit-0.7.0/bin/bashunit temp_bashunit
-  rm bashunit-0.7.0.tar.gz
-fi
-
-## Common
-cd temp_bashunit
-./install.sh
-cd ..
-cp temp_bashunit/bin/bashunit bashunit
-rm -rf temp_bashunit
+chmod +x _install.sh
+./_install.sh
+rm _install.sh
