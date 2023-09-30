@@ -3,7 +3,7 @@
 function main() {
     numberOfPortions=$1
     pricePerPortion=$(calculatePrice $numberOfPortions)
-    totalPrice=$(( $numberOfPortions * $pricePerPortion ))
+    totalPrice=$(( numberOfPortions * pricePerPortion ))
 
     echo "Total $totalPrice"
 }
@@ -13,7 +13,7 @@ function calculatePrice() {
         echo "100"
     else
         day=$(getDay)
-        if (( $day % 2 )); then
+        if (( day % 2 )); then
             echo "80"
         else
             echo "100"
@@ -25,7 +25,6 @@ function getDay() {
     date -d '+%d'
 }
 
-if [[ "${BASH_SOURCE[0]}" == "${0}" ]]
-then
-  main $@
+if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
+  main "$@"
 fi
