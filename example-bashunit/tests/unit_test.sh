@@ -8,8 +8,8 @@ function setUp() {
 function test_ice_cream_price_should_be_100_per_portion_for_low_quantities() {
   result=$(main 1)
 
-  assertSuccessfulCode
-  assertEquals "${result}" "Total 100"
+  assert_successful_code
+  assert_equals "${result}" "Total 100"
 }
 
 function test_there_should_be_20_percent_discount_for_large_quantities_on_odd_days() {
@@ -19,8 +19,8 @@ function test_there_should_be_20_percent_discount_for_large_quantities_on_odd_da
 
   result=$(main 4)
 
-  assertSuccessfulCode
-  assertEquals "${result}" "Total 320"
+  assert_successful_code
+  assert_equals "${result}" "Total 320"
 }
 
 function test_there_should_be_no_discount_even_for_large_quantities_on_even_days() {
@@ -30,6 +30,6 @@ function test_there_should_be_no_discount_even_for_large_quantities_on_even_days
 
   result=$(main 4)
 
-  assertSuccessfulCode
-  assertEquals "${result}" "Total 400"
+  assert_successful_code
+  assert_equals "${result}" "Total 400"
 }
