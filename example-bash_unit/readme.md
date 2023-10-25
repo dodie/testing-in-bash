@@ -37,7 +37,7 @@ one might wish to introduce a [lightweight wrapper](https://github.com/dodie/tes
 
 ## Custom assertions
 
-✔️ It’s possible to create new assertions by building functions on top of the existing assertions, although there's no dedicated no dedicated lower-level API to support it. Custom assertions can be sourced from an external file.
+✔️ It’s possible to create new assertions by building functions on top of the existing assertions, although there's no dedicated lower-level API to support it. Custom assertions can be sourced from an external file.
 
 
 ## Skip tests
