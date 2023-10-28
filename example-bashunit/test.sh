@@ -6,5 +6,5 @@ cd "$(dirname "$0")"
 export PROJECT_DIR="$(realpath ".")"
 export SRC="${PROJECT_DIR}/src"
 
-bin/bashunit tests/*_test.sh
+lib/bashunit tests/*_test.sh
 
