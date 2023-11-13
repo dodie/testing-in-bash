@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# setUp is called before executing each test function
-function setUp() {
-  source "${SRC}/ice_cream_price.sh"
+# set_up is called before executing each test function
+function set_up() {
+  source "$(realpath ".")/src/ice_cream_price.sh"
 }
 
 function test_ice_cream_price_should_be_100_per_portion_for_low_quantities() {
