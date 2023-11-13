@@ -1,5 +1,5 @@
 #!/bin/bash
 
 function myfun() {
-    echo "Hello!"
+  echo "Hello!"
 }

@@ -1,28 +1,28 @@
 #!/bin/bash
 
 function main() {
-    numberOfPortions=$1
-    pricePerPortion=$(calculatePrice $numberOfPortions)
-    totalPrice=$(( numberOfPortions * pricePerPortion ))
+  numberOfPortions=$1
+  pricePerPortion=$(calculatePrice $numberOfPortions)
+  totalPrice=$(( numberOfPortions * pricePerPortion ))
 
-    echo "Total $totalPrice"
+  echo "Total $totalPrice"
 }
 
 function calculatePrice() {
-    if [[ $numberOfPortions -lt 3 ]]; then
-        echo "100"
+  if [[ $numberOfPortions -lt 3 ]]; then
+    echo "100"
+  else
+    day=$(getDay)
+    if (( day % 2 )); then
+      echo "80"
     else
-        day=$(getDay)
-        if (( day % 2 )); then
-            echo "80"
-        else
-            echo "100"
-        fi
+      echo "100"
     fi
+  fi
 }
 
 function getDay() {
-    date -d '+%d'
+  date -d '+%d'
 }
 
 if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
