@@ -4,4 +4,4 @@
 # More details about bashunit installation         #
 # see: https://bashunit.typeddevs.com/installation #
 ####################################################
-curl -s https://bashunit.typeddevs.com/install.sh | bash -s lib beta
+curl -s https://bashunit.typeddevs.com/install.sh | bash -s lib 0.10.1
